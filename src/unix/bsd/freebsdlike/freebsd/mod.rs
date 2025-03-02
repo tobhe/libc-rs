@@ -5571,7 +5571,6 @@ extern "C" {
         new_value: *const itimerspec,
         old_value: *mut itimerspec,
     ) -> c_int;
-    pub fn closefrom(lowfd: c_int);
     pub fn close_range(lowfd: c_uint, highfd: c_uint, flags: c_int) -> c_int;
 
     pub fn execvpe(

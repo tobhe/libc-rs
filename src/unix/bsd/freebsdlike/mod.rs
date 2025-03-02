@@ -1795,6 +1795,8 @@ extern "C" {
         search_path: *const c_char,
         argv: *const *mut c_char,
     ) -> c_int;
+
+    pub fn closefrom(lowfd: c_int);
 }
 
 #[link(name = "rt")]
